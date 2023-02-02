@@ -20,10 +20,8 @@ const arrayOfJson = [
 
 ]
 
-console.log(arrayOfJson)
-
-const addNewProperty = (param) => {
-    param.filter((cityName) => cityName.cidade === "Belo Horizonte").map((i) => Object.assign(i, { "estado": "MG" }))
+const addNewProperty = (json) => {
+    json.filter((cityName) => cityName.cidade === "Belo Horizonte").map((i) => Object.assign(i, { "estado": "MG" }))
     return console.log(arrayOfJson)
 }
 
