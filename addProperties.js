@@ -13,14 +13,18 @@ const arrayOfJson = [
     },
     {
         "cidade": "Belo Horizonte",
-    }
+    },
+    {
+        "cidade": "Belo Horizonte",
+    },
+
 ]
 
 console.log(arrayOfJson)
 
-const showData = (param) => {
+const addNewProperty = (param) => {
     param.filter((cityName) => cityName.cidade === "Belo Horizonte").map((i) => Object.assign(i, { "estado": "MG" }))
     return console.log(arrayOfJson)
 }
 
-showData(arrayOfJson)
+addNewProperty(arrayOfJson)
